@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>mousePressed変数</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "5-8.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+	<div class="code">
+	<p>　　	void setup(){
+	<p>　　	　size(240, 120);
+	<p>　　	　strokeWeight(30);　　	　
+	<p>　　	}
+	<p>　　	
+	<p>　　	void draw(){
+	<p>　　	　background(204);
+  	<p>　　	　stroke(102);
+  	<p>　　	　line(40, 0, 70, height);
+  	<p>　　	　if(mousePressed==true){
+	<p>　　	　　stroke(0);
+	<p>　　	　　}
+  	<p>　　	　line(0, 70, width, 50);
+	<p>　　	}
+	</div>
+	</div>
+</div>
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　mousePressed変数が取り得る値は（true）か（false）の2種類である。
+	<p>　マウスのボタンがクリックされるとmousePressed変数は真（true）の値を得る。
+	<p>　マウスのボタンがクリックされていないと偽（false）の値を得ている。
+	<p>　mousePressed変数とif構文を組み合わせることでコードを実行すべきかどうか判別することができる。
+	<p>　例では、マウスのボタンがクリックされている間はmousePressedの値が（true）となりstroke(0)が実行される仕組みとなっている。
+	<p>　mousePressed変数はそれ自体が真か偽を示すため、例では使用しているが下記のように示し、必ず演算子を使用し明確な条件を与える必要はない。
+	<p>　if(mousePrseed){ コード }
+
+</div>
+</body>
